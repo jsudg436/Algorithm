@@ -7,15 +7,17 @@ lst = list(range(1, N + 1))
 for m in range(M):
   # for문으로 M번 동안 역순으로 바꿀 바구니의 범위 입력
   i, j = map(int, sys.stdin.readline().split())
-  temp = lst[i-1:j]   # 입력받은 범위만큼 추출
-  temp.reverse()      # 역순으로 정렬
-  del lst[i-1:j]      # 기존 리스트의 원소 삭제
-  lst[i-1:i-1] = temp
-
+  lst[i-1:j] = reversed(lst[i-1:j])
+  
   # 기존코드
+  # temp = lst[i-1:j]   # 입력받은 범위만큼 추출
+  # temp.reverse()      # 역순으로 정렬
+  # del lst[i-1:j]      # 기존 리스트의 원소 삭제
+  # lst[i-1:i-1] = temp
+  #
   # # for문으로 순서대로 원소 하나씩 추가
   # for n in range(len(temp)):
   #   lst.insert(i-1+n, temp[n])
-  
+
 # 최종 바구니 순서 출력
 print(*lst)
