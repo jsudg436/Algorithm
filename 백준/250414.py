@@ -1,3 +1,18 @@
+# 11718. 그대로 출력하기
+# import sys
+# a = []
+#
+# while(True):
+#   b = sys.stdin.readline().rstrip()
+#   if b == '':
+#     break
+#   a.append(b)
+#
+# for i in a:
+#   print(i)
+
+
+
 # 1316. 그룹 단어 체커
 # import sys
 # N = int(sys.stdin.readline())
@@ -26,6 +41,7 @@
 #   if flag == 1:
 #     M += 1
 # print(M)
+
 
 
 # 25206. 너의 평점은
